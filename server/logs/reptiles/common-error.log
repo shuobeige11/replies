@@ -1,0 +1,254 @@
+2020-02-09 00:40:48,350 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 1826215ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 03:44:26,596 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 932043ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 05:32:43,081 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 6496081ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 07:15:07,215 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 6144092ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 08:44:40,233 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 5332251ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 08:59:12,317 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 871795ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 09:58:41,520 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 2228960ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 10:36:55,509 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 2165139ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:47:48,741 ERROR 62395 nodejs.unhandledRejectionError: Navigation failed because browser has disconnected!
+    at CDPSession.LifecycleWatcher._eventListeners.helper.addEventListener (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/LifecycleWatcher.js:46:107)
+    at CDPSession.emit (events.js:198:13)
+    at CDPSession._onClosed (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:215:10)
+    at Connection._onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:138:15)
+    at WebSocketTransport._ws.addEventListener.event (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/WebSocketTransport.js:48:22)
+    at WebSocket.onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/event-target.js:124:16)
+    at WebSocket.emit (events.js:198:13)
+    at WebSocket.emitClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:850:15)
+    at Socket.emit (events.js:198:13)
+    at TCP._handle.close (net.js:606:12)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:670:49)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:50:14)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "unhandledRejectionError"
+pid: 62395
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:47:48,746 ERROR 62395 nodejs.unhandledRejectionError: Navigation failed because browser has disconnected!
+    at CDPSession.LifecycleWatcher._eventListeners.helper.addEventListener (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/LifecycleWatcher.js:46:107)
+    at CDPSession.emit (events.js:198:13)
+    at CDPSession._onClosed (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:215:10)
+    at Connection._onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:138:15)
+    at WebSocketTransport._ws.addEventListener.event (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/WebSocketTransport.js:48:22)
+    at WebSocket.onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/event-target.js:124:16)
+    at WebSocket.emit (events.js:198:13)
+    at WebSocket.emitClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:850:15)
+    at Socket.emit (events.js:198:13)
+    at TCP._handle.close (net.js:606:12)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:670:49)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:50:14)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "unhandledRejectionError"
+pid: 62395
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:53:44,469 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 339541ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 12:27:51,814 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 709966ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 12:52:19,070 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 827084ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 13:42:30,021 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 2262467ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 14:20:56,243 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 165695ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 15:18:44,541 ERROR 66111 nodejs.ClusterClientNoResponseError: client no response in 1912047ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 66111
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 16:04:00,635 ERROR 66256 nodejs.unhandledRejectionError: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:180:29)
+    at ExecutionContext._evaluateInternal (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:107:44)
+    at ExecutionContext.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:48:23)
+    at ExecutionContext.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at DOMWorld.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:858:43)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:52:21)
+name: "unhandledRejectionError"
+pid: 66256
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 16:04:00,635 ERROR 66256 nodejs.unhandledRejectionError: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:180:29)
+    at ExecutionContext._evaluateInternal (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:107:44)
+    at ExecutionContext.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:48:23)
+    at ExecutionContext.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at DOMWorld.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:858:43)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:52:21)
+name: "unhandledRejectionError"
+pid: 66256
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 18:34:03,745 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 139290ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 19:00:26,493 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 1354702ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 19:25:02,749 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 976156ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 20:54:40,622 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 2417369ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+

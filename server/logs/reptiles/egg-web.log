@@ -1,0 +1,233 @@
+2020-02-08 23:59:49,468 INFO 56624 [egg-logrotator] app logger reload: got log-reload message
+2020-02-09 00:40:48,295 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 03:44:26,450 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 05:32:42,958 WARN 56624 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 05:32:42,974 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 07:15:07,489 WARN 56624 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 07:15:07,505 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 08:44:40,390 WARN 56624 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 08:44:40,414 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 08:59:12,317 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 09:58:41,706 WARN 56624 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 09:58:41,727 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 10:36:55,509 WARN 56624 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 10:36:55,509 WARN 56624 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 10:56:47,942 INFO 62381 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 10:56:49,174 INFO 62381 [egg-multipart] stream mode enable
+2020-02-09 10:56:50,147 INFO 62381 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 10:56:50,160 INFO 62381 [egg-security] use methodnoallow middleware
+2020-02-09 10:56:50,162 INFO 62381 [egg-security] use noopen middleware
+2020-02-09 10:56:50,171 INFO 62381 [egg-security] use nosniff middleware
+2020-02-09 10:56:50,175 INFO 62381 [egg-security] use xssProtection middleware
+2020-02-09 10:56:50,178 INFO 62381 [egg-security] use xframe middleware
+2020-02-09 10:56:50,179 INFO 62381 [egg-security] use dta middleware
+2020-02-09 10:56:50,179 INFO 62381 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 10:56:50,235 INFO 62381 [egg:core] dump config after load, 16ms
+2020-02-09 10:56:50,446 INFO 62381 [egg-watcher:application] watcher start success
+2020-02-09 10:56:50,517 INFO 62381 [egg:core] dump config after ready, 7ms
+2020-02-09 10:57:20,652 INFO 62394 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 10:57:21,049 INFO 62394 [egg-multipart] stream mode enable
+2020-02-09 10:57:21,527 INFO 62394 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 10:57:21,532 INFO 62394 [egg-security] use methodnoallow middleware
+2020-02-09 10:57:21,532 INFO 62394 [egg-security] use noopen middleware
+2020-02-09 10:57:21,534 INFO 62394 [egg-security] use nosniff middleware
+2020-02-09 10:57:21,534 INFO 62394 [egg-security] use xssProtection middleware
+2020-02-09 10:57:21,535 INFO 62394 [egg-security] use xframe middleware
+2020-02-09 10:57:21,536 INFO 62394 [egg-security] use dta middleware
+2020-02-09 10:57:21,536 INFO 62394 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 10:57:21,556 INFO 62394 [egg:core] dump config after load, 11ms
+2020-02-09 10:57:21,612 INFO 62394 [egg-watcher:application] watcher start success
+2020-02-09 10:57:21,696 INFO 62394 [egg:core] dump config after ready, 8ms
+2020-02-09 10:57:23,413 INFO 62395 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 10:57:23,804 INFO 62395 [egg-multipart] stream mode enable
+2020-02-09 10:57:24,297 INFO 62395 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 10:57:24,300 INFO 62395 [egg-security] use methodnoallow middleware
+2020-02-09 10:57:24,301 INFO 62395 [egg-security] use noopen middleware
+2020-02-09 10:57:24,302 INFO 62395 [egg-security] use nosniff middleware
+2020-02-09 10:57:24,303 INFO 62395 [egg-security] use xssProtection middleware
+2020-02-09 10:57:24,304 INFO 62395 [egg-security] use xframe middleware
+2020-02-09 10:57:24,304 INFO 62395 [egg-security] use dta middleware
+2020-02-09 10:57:24,304 INFO 62395 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 10:57:24,326 INFO 62395 [egg:core] dump config after load, 13ms
+2020-02-09 10:57:24,446 INFO 62395 [egg-watcher:application] watcher start success
+2020-02-09 10:57:24,567 INFO 62395 [egg:core] dump config after ready, 12ms
+2020-02-09 11:39:22,777 INFO 62395 [-/127.0.0.1/-/19ms SCHEDULE /__schedule?path=/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/4v/tb2flc8s3yzcf_g8hm2h97kw0000gn/T/egg-multipart-tmp/reptiles"
+2020-02-09 11:39:22,812 INFO 62395 [-/127.0.0.1/-/74ms SCHEDULE /__schedule?path=/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] end
+2020-02-09 11:47:48,745 ERROR 62395 nodejs.unhandledRejectionError: Navigation failed because browser has disconnected!
+    at CDPSession.LifecycleWatcher._eventListeners.helper.addEventListener (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/LifecycleWatcher.js:46:107)
+    at CDPSession.emit (events.js:198:13)
+    at CDPSession._onClosed (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:215:10)
+    at Connection._onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:138:15)
+    at WebSocketTransport._ws.addEventListener.event (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/WebSocketTransport.js:48:22)
+    at WebSocket.onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/event-target.js:124:16)
+    at WebSocket.emit (events.js:198:13)
+    at WebSocket.emitClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:850:15)
+    at Socket.emit (events.js:198:13)
+    at TCP._handle.close (net.js:606:12)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:670:49)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:50:14)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "unhandledRejectionError"
+pid: 62395
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:47:48,747 ERROR 62395 nodejs.unhandledRejectionError: Navigation failed because browser has disconnected!
+    at CDPSession.LifecycleWatcher._eventListeners.helper.addEventListener (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/LifecycleWatcher.js:46:107)
+    at CDPSession.emit (events.js:198:13)
+    at CDPSession._onClosed (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:215:10)
+    at Connection._onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:138:15)
+    at WebSocketTransport._ws.addEventListener.event (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/WebSocketTransport.js:48:22)
+    at WebSocket.onClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/event-target.js:124:16)
+    at WebSocket.emit (events.js:198:13)
+    at WebSocket.emitClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:191:10)
+    at Socket.socketOnClose (/Users/weichangbin/Desktop/reptiles/server/node_modules/ws/lib/websocket.js:850:15)
+    at Socket.emit (events.js:198:13)
+    at TCP._handle.close (net.js:606:12)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:670:49)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:50:14)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "unhandledRejectionError"
+pid: 62395
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:53:44,446 WARN 62395 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 11:54:19,744 INFO 63721 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 11:54:20,427 INFO 63721 [egg-multipart] stream mode enable
+2020-02-09 11:54:21,366 INFO 63721 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 11:54:21,374 INFO 63721 [egg-security] use methodnoallow middleware
+2020-02-09 11:54:21,377 INFO 63721 [egg-security] use noopen middleware
+2020-02-09 11:54:21,383 INFO 63721 [egg-security] use nosniff middleware
+2020-02-09 11:54:21,387 INFO 63721 [egg-security] use xssProtection middleware
+2020-02-09 11:54:21,390 INFO 63721 [egg-security] use xframe middleware
+2020-02-09 11:54:21,392 INFO 63721 [egg-security] use dta middleware
+2020-02-09 11:54:21,392 INFO 63721 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 11:54:21,448 INFO 63721 [egg:core] dump config after load, 21ms
+2020-02-09 11:54:21,562 INFO 63721 [egg-watcher:application] watcher start success
+2020-02-09 11:54:21,658 INFO 63721 [egg:core] dump config after ready, 13ms
+2020-02-09 12:27:51,821 WARN 63721 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 12:52:19,070 WARN 63721 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 13:42:30,022 WARN 63721 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 13:42:30,022 WARN 63721 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 14:20:56,244 WARN 63721 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 14:20:56,246 WARN 63721 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 14:24:34,327 INFO 66121 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 14:24:35,701 INFO 66121 [egg-multipart] stream mode enable
+2020-02-09 14:24:37,137 INFO 66121 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 14:24:37,142 INFO 66121 [egg-security] use methodnoallow middleware
+2020-02-09 14:24:37,143 INFO 66121 [egg-security] use noopen middleware
+2020-02-09 14:24:37,144 INFO 66121 [egg-security] use nosniff middleware
+2020-02-09 14:24:37,147 INFO 66121 [egg-security] use xssProtection middleware
+2020-02-09 14:24:37,149 INFO 66121 [egg-security] use xframe middleware
+2020-02-09 14:24:37,151 INFO 66121 [egg-security] use dta middleware
+2020-02-09 14:24:37,151 INFO 66121 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 14:24:37,176 INFO 66121 [egg:core] dump config after load, 11ms
+2020-02-09 14:24:37,281 INFO 66121 [egg-watcher:application] watcher start success
+2020-02-09 14:24:37,369 INFO 66121 [egg:core] dump config after ready, 19ms
+2020-02-09 14:30:10,593 INFO 66256 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 14:30:11,300 INFO 66256 [egg-multipart] stream mode enable
+2020-02-09 14:30:12,216 INFO 66256 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 14:30:12,221 INFO 66256 [egg-security] use methodnoallow middleware
+2020-02-09 14:30:12,223 INFO 66256 [egg-security] use noopen middleware
+2020-02-09 14:30:12,225 INFO 66256 [egg-security] use nosniff middleware
+2020-02-09 14:30:12,227 INFO 66256 [egg-security] use xssProtection middleware
+2020-02-09 14:30:12,229 INFO 66256 [egg-security] use xframe middleware
+2020-02-09 14:30:12,230 INFO 66256 [egg-security] use dta middleware
+2020-02-09 14:30:12,230 INFO 66256 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 14:30:12,261 INFO 66256 [egg:core] dump config after load, 15ms
+2020-02-09 14:30:12,308 INFO 66256 [egg-watcher:application] watcher start success
+2020-02-09 14:30:12,407 INFO 66256 [egg:core] dump config after ready, 10ms
+2020-02-09 15:18:44,540 WARN 66256 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 16:04:00,635 ERROR 66256 nodejs.unhandledRejectionError: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:180:29)
+    at ExecutionContext._evaluateInternal (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:107:44)
+    at ExecutionContext.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:48:23)
+    at ExecutionContext.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at DOMWorld.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:858:43)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:52:21)
+name: "unhandledRejectionError"
+pid: 66256
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 16:04:00,636 ERROR 66256 nodejs.unhandledRejectionError: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Connection.js:180:29)
+    at ExecutionContext._evaluateInternal (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:107:44)
+    at ExecutionContext.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/ExecutionContext.js:48:23)
+    at ExecutionContext.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at DOMWorld.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+  -- ASYNC --
+    at Frame.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/Page.js:858:43)
+    at Page.<anonymous> (/Users/weichangbin/Desktop/reptiles/server/node_modules/puppeteer/lib/helper.js:112:23)
+    at replies (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:52:21)
+name: "unhandledRejectionError"
+pid: 66256
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 16:25:51,122 INFO 69173 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-09 16:25:52,060 INFO 69173 [egg-multipart] stream mode enable
+2020-02-09 16:25:53,872 INFO 69173 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-09 16:25:53,877 INFO 69173 [egg-security] use methodnoallow middleware
+2020-02-09 16:25:53,879 INFO 69173 [egg-security] use noopen middleware
+2020-02-09 16:25:53,881 INFO 69173 [egg-security] use nosniff middleware
+2020-02-09 16:25:53,882 INFO 69173 [egg-security] use xssProtection middleware
+2020-02-09 16:25:53,883 INFO 69173 [egg-security] use xframe middleware
+2020-02-09 16:25:53,885 INFO 69173 [egg-security] use dta middleware
+2020-02-09 16:25:53,885 INFO 69173 [egg-security] compose 6 middlewares into one security middleware
+2020-02-09 16:25:53,920 INFO 69173 [egg:core] dump config after load, 20ms
+2020-02-09 16:25:54,030 INFO 69173 [egg-watcher:application] watcher start success
+2020-02-09 16:25:54,138 INFO 69173 [egg:core] dump config after ready, 22ms
+2020-02-09 18:34:03,675 WARN 69173 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 19:00:26,495 WARN 69173 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 19:25:02,750 WARN 69173 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-09 20:54:40,631 WARN 69173 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-02-09 20:54:40,632 WARN 69173 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-10 08:49:07,219 INFO 77139 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-10 08:49:08,884 INFO 77139 [egg-multipart] stream mode enable
+2020-02-10 08:49:10,153 INFO 77139 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-10 08:49:10,160 INFO 77139 [egg-security] use methodnoallow middleware
+2020-02-10 08:49:10,162 INFO 77139 [egg-security] use noopen middleware
+2020-02-10 08:49:10,165 INFO 77139 [egg-security] use nosniff middleware
+2020-02-10 08:49:10,166 INFO 77139 [egg-security] use xssProtection middleware
+2020-02-10 08:49:10,168 INFO 77139 [egg-security] use xframe middleware
+2020-02-10 08:49:10,169 INFO 77139 [egg-security] use dta middleware
+2020-02-10 08:49:10,169 INFO 77139 [egg-security] compose 6 middlewares into one security middleware
+2020-02-10 08:49:10,205 INFO 77139 [egg:core] dump config after load, 20ms
+2020-02-10 08:49:10,603 INFO 77139 [egg-watcher:application] watcher start success
+2020-02-10 08:49:10,664 INFO 77139 [egg:core] dump config after ready, 10ms
+2020-02-10 09:51:00,279 INFO 79769 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-10 09:51:01,567 INFO 79769 [egg-multipart] stream mode enable
+2020-02-10 09:51:02,741 INFO 79769 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-10 09:51:02,747 INFO 79769 [egg-security] use methodnoallow middleware
+2020-02-10 09:51:02,750 INFO 79769 [egg-security] use noopen middleware
+2020-02-10 09:51:02,752 INFO 79769 [egg-security] use nosniff middleware
+2020-02-10 09:51:02,753 INFO 79769 [egg-security] use xssProtection middleware
+2020-02-10 09:51:02,754 INFO 79769 [egg-security] use xframe middleware
+2020-02-10 09:51:02,756 INFO 79769 [egg-security] use dta middleware
+2020-02-10 09:51:02,756 INFO 79769 [egg-security] compose 6 middlewares into one security middleware
+2020-02-10 09:51:02,783 INFO 79769 [egg:core] dump config after load, 10ms
+2020-02-10 09:51:02,910 INFO 79769 [egg-watcher:application] watcher start success
+2020-02-10 09:51:03,014 INFO 79769 [egg:core] dump config after ready, 13ms
+2020-02-10 09:51:06,480 INFO 79773 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-10 09:51:07,538 INFO 79773 [egg-multipart] stream mode enable
+2020-02-10 09:51:08,596 INFO 79773 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-10 09:51:08,604 INFO 79773 [egg-security] use methodnoallow middleware
+2020-02-10 09:51:08,606 INFO 79773 [egg-security] use noopen middleware
+2020-02-10 09:51:08,608 INFO 79773 [egg-security] use nosniff middleware
+2020-02-10 09:51:08,610 INFO 79773 [egg-security] use xssProtection middleware
+2020-02-10 09:51:08,612 INFO 79773 [egg-security] use xframe middleware
+2020-02-10 09:51:08,614 INFO 79773 [egg-security] use dta middleware
+2020-02-10 09:51:08,614 INFO 79773 [egg-security] compose 6 middlewares into one security middleware
+2020-02-10 09:51:08,682 INFO 79773 [egg:core] dump config after load, 41ms
+2020-02-10 09:51:08,914 INFO 79773 [egg-watcher:application] watcher start success
+2020-02-10 09:51:09,013 INFO 79773 [egg:core] dump config after ready, 12ms

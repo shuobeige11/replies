@@ -1,0 +1,500 @@
+2020-02-08 19:53:57,799 ERROR 52314 [-/127.0.0.1/-/74ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:84:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]
+pid: 52314
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:55:44,231 ERROR 52349 [-/127.0.0.1/-/110ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:85:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]
+pid: 52349
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:56:52,447 ERROR 52373 [-/127.0.0.1/-/89ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:85:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]
+pid: 52373
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 20:03:23,585 ERROR 52595 [-/127.0.0.1/-/33ms PUT /api/category/21] nodejs.ReferenceError: data is not defined
+    at Category.vaildate (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:105:10)
+
+pid: 52595
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:43:37,618 ERROR 55133 [-/127.0.0.1/-/35ms POST /api/setting] nodejs.SequelizeDatabaseError: Incorrect integer value: '' for column 'wcb_scheduler' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:49:29)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'wcb_scheduler' at row 1","sql":"INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'wcb_scheduler' at row 1","sql":"INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]}
+sql: "INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"
+parameters: ["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]
+pid: 55133
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:51:23,382 ERROR 55503 [-/127.0.0.1/-/47ms POST /api/setting] nodejs.SequelizeDatabaseError: Unknown column 'wcb_scheduler' in 'field list'
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1755:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:36:40)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:44)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+sql: "SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"
+parameters: undefined
+pid: 55503
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:51:24,559 ERROR 55503 [-/127.0.0.1/-/8ms POST /api/setting] nodejs.SequelizeDatabaseError: Unknown column 'wcb_scheduler' in 'field list'
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1755:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:36:40)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:44)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+sql: "SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"
+parameters: undefined
+pid: 55503
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:56:33,315 ERROR 55521 [-/127.0.0.1/-/27ms POST /api/category] nodejs.SequelizeDatabaseError: Incorrect string value: '\xE6\xBA\xA7\xE6\xB0\xB4...' for column 'wcb_name' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:71:30)
+    at apiCategory.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js:59:45)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:56:58,222 ERROR 55521 [-/127.0.0.1/-/21ms POST /api/category] nodejs.SequelizeDatabaseError: Incorrect string value: '\xE6\xBA\xA7\xE6\xB0\xB4...' for column 'wcb_name' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:71:30)
+    at apiCategory.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js:59:45)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 22:19:32,438 ERROR 55501 nodejs.ClusterClientNoResponseError: client no response in 607997ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 55501
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 22:41:54,446 ERROR 55501 nodejs.ClusterClientNoResponseError: client no response in 1341990ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 55501
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 22:54:19,865 ERROR 55521 nodejs.SequelizeDatabaseError: Incorrect string value: '\xE5\xB9\xB4\xE6\x9C\xAB...' for column 'wcb_site_list' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.bulkUpdate (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1044:27)
+    at Promise.try.then.then.then.results (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3222:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3203:8)
+    at Promise.all.then (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:35:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE5\\xB9\\xB4\\xE6\\x9C\\xAB...' for column 'wcb_site_list' at row 1","sql":"UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?","parameters":["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE5\\xB9\\xB4\\xE6\\x9C\\xAB...' for column 'wcb_site_list' at row 1","sql":"UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?","parameters":["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]}
+sql: "UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?"
+parameters: ["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+

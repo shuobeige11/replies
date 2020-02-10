@@ -1,0 +1,777 @@
+2020-02-08 19:53:31,052 INFO 52314 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 19:53:38,499 INFO 52314 [egg-sequelize](19ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:53:42,882 INFO 52314 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 19:53:57,763 INFO 52314 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_name` = '溧水拆迁' LIMIT 1;
+2020-02-08 19:53:57,771 INFO 52314 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 19:53:57,792 INFO 52314 [egg-sequelize](4ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 19:53:57,801 ERROR 52314 [-/127.0.0.1/-/74ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:84:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:53:57","2020-02-08 19:53:57"]
+pid: 52314
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:53:57,838 INFO 52314 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:54:24,195 INFO 52335 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 19:55:36,036 INFO 52335 [egg-sequelize](8ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:55:36,551 INFO 52349 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 19:55:38,001 INFO 52349 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 19:55:44,157 INFO 52349 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_name` = '拆迁' LIMIT 1;
+2020-02-08 19:55:44,174 INFO 52349 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 19:55:44,213 INFO 52349 [egg-sequelize](6ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 19:55:44,257 ERROR 52349 [-/127.0.0.1/-/110ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:85:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","溧水拆迁",0,"2020-02-08 19:55:44","2020-02-08 19:55:44"]
+pid: 52349
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:55:44,358 INFO 52349 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:56:29,313 INFO 52373 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 19:56:40,865 INFO 52373 [egg-sequelize](11ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:56:41,621 INFO 52373 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 19:56:52,397 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_name` = '溧水拆迁' LIMIT 1;
+2020-02-08 19:56:52,404 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 19:56:52,431 INFO 52373 [egg-sequelize](4ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 19:56:52,463 ERROR 52373 [-/127.0.0.1/-/89ms POST /api/category] nodejs.SequelizeDatabaseError: Data truncated for column 'wcb_switch' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:85:30)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'wcb_switch' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水拆迁","[{\"desc\":\"\",\"url\":\"http://www.qianlima.com/hot2161335/\"}]","拆迁",0,"2020-02-08 19:56:52","2020-02-08 19:56:52"]
+pid: 52373
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:56:52,554 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:58:34,907 INFO 52373 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 19:58:35,736 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 19:58:47,354 WARN 52373 [-/127.0.0.1/-/3ms POST /api/category] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-validate/app/extend/context.js:14:17)
+    at apiCategory.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js:58:11)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"weblist"}]
+pid: 52373
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 19:58:47,442 INFO 52373 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:00:45,736 INFO 52373 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:00:48,332 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:01:14,295 INFO 52373 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_name` = '溧水拆迁' LIMIT 1;
+2020-02-08 20:01:14,302 INFO 52373 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:01:14,321 INFO 52373 [egg-sequelize](11ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 20:01:14,394 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:01:26,382 INFO 52373 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:01:32,238 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_name` = '我的竞赛' LIMIT 1;
+2020-02-08 20:01:32,337 INFO 52373 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:02:46,330 INFO 52373 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:02:49,288 INFO 52576 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:03:15,347 INFO 52576 [egg-sequelize](7ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:03:16,252 INFO 52595 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:03:21,427 INFO 52595 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:03:23,582 INFO 52595 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:03:23,586 ERROR 52595 [-/127.0.0.1/-/33ms PUT /api/category/21] nodejs.ReferenceError: data is not defined
+    at Category.vaildate (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:105:10)
+
+pid: 52595
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 20:03:23,804 INFO 52595 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:03:49,781 INFO 52595 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:03:51,388 INFO 52595 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:03:51,926 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:03:58,623 INFO 52599 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:03:58,627 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:03:58,766 INFO 52599 [egg-sequelize](7ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:04:11,619 INFO 52599 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:04:15,765 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:04:15,768 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:04:15,956 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:04:38,968 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:04:46,069 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:04:46,116 INFO 52599 [egg-sequelize](14ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:04:46,183 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:04:48,744 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:04:51,276 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:04:53,421 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:04:53,426 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:04:53,439 INFO 52599 [egg-sequelize](8ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:04:53,537 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:04:58,879 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:05:00,837 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:06:49,067 INFO 52599 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:09:08,526 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:09:10,759 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:09:28,007 INFO 52599 [egg-sequelize](5ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 20:09:28,081 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:09:38,275 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:10:24,044 INFO 52599 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:10:24,055 INFO 52599 [egg-sequelize](7ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 20:10:24,151 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:26:29,419 INFO 52599 [egg-sequelize](6ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 20:26:29,435 INFO 52599 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1' LIMIT 1;
+2020-02-08 20:27:07,883 INFO 52599 [egg-sequelize](9ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?
+2020-02-08 20:27:09,263 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:27:12,826 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:27:12,833 INFO 52599 [egg-sequelize](2ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:27:12,859 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:27:15,500 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:27:19,723 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:27:19,732 INFO 52599 [egg-sequelize](4ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:27:19,772 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:27:23,748 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:27:30,873 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:27:30,878 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:27:30,885 INFO 52599 [egg-sequelize](2ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:27:30,920 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:38:37,289 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:38:39,711 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:38:44,026 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:38:47,887 INFO 52599 [egg-sequelize](0ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList` WHERE `wcbWebsiteList`.`wcb_web_site` = 'http://www.ls114.cn/' LIMIT 1;
+2020-02-08 20:38:47,901 INFO 52599 [egg-sequelize](6ms) Executed (default): INSERT INTO `wcb_website_lists` (`wcb_object_id`,`wcb_web_site`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?);
+2020-02-08 20:38:47,935 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:38:49,554 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:38:51,025 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:38:56,954 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:38:56,959 INFO 52599 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:38:57,034 INFO 52599 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:39:46,675 INFO 53534 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:40:01,736 INFO 53534 [egg-sequelize](11ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:40:04,222 INFO 53538 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:40:06,355 INFO 53538 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:40:06,360 INFO 53538 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:40:06,476 INFO 53538 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:40:09,023 INFO 53538 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:41:57,821 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:42:08,816 INFO 53565 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:42:09,886 INFO 53565 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:42:13,395 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 20:42:13,460 INFO 53565 [egg-sequelize](14ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 20:42:13,535 INFO 53565 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:42:46,471 INFO 53565 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:42:48,733 INFO 53565 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:43:41,872 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:43:57,241 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:44:01,346 INFO 53565 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:44:02,933 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:44:58,433 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:45:00,590 INFO 53565 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:45:03,326 INFO 53565 [egg-sequelize](8ms) Executed (default): DELETE FROM `wcb_website_types` WHERE `wcb_object_id` = '24'
+2020-02-08 20:45:03,419 INFO 53565 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:45:12,375 INFO 53565 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 20:45:15,446 INFO 53565 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 20:48:25,861 INFO 53724 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 20:56:29,534 INFO 53724 [egg-sequelize](10ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 20:56:29,562 INFO 53724 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1' LIMIT 1;
+2020-02-08 20:56:58,841 INFO 53724 [egg-sequelize](18ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?
+2020-02-08 21:26:29,609 INFO 53724 [egg-sequelize](6ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:26:29,619 INFO 53724 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1' LIMIT 1;
+2020-02-08 21:27:14,076 INFO 53724 [egg-sequelize](11ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?
+2020-02-08 21:28:26,367 INFO 53724 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:28:26,582 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:28:28,856 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:30:11,504 INFO 53724 [egg-sequelize](6ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:30:14,965 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:30:38,641 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:30:52,728 INFO 53724 [egg-sequelize](19ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:31:01,178 INFO 53724 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:31:02,299 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:32:51,631 INFO 53724 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:33:18,365 INFO 53724 [egg-sequelize](7ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:34:23,844 INFO 53724 [egg-sequelize](12ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:34:37,346 INFO 53724 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:35:44,066 INFO 53724 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:35:44,263 INFO 53724 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:36:55,114 WARN 53724 [-/127.0.0.1/-/40ms POST /api/setting] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-validate/app/extend/context.js:14:17)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:11)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"ports"}]
+pid: 53724
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:37:24,852 INFO 55097 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:37:29,994 INFO 55097 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:37:32,089 INFO 55099 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:37:46,835 WARN 55099 [-/127.0.0.1/-/64ms POST /api/setting] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-validate/app/extend/context.js:14:17)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:11)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"ports"}]
+pid: 55099
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:38:09,471 INFO 55118 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:38:24,934 INFO 55118 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:38:27,626 INFO 55121 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:38:35,288 WARN 55121 [-/127.0.0.1/-/30ms POST /api/setting] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-validate/app/extend/context.js:14:17)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:11)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"ports"}]
+pid: 55121
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:38:51,869 INFO 55133 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:39:17,253 INFO 55133 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:39:28,462 INFO 55133 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:39:30,999 INFO 55133 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:39:43,110 INFO 55133 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:39:43,137 INFO 55133 [egg-sequelize](9ms) Executed (default): UPDATE `wcb_settings` SET `wcb_server_address`=?,`wcb_server_ports`=?,`wcb_mail_from`=?,`wcb_auth_pass`=?,`wcb_mail_to`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 21:39:55,400 INFO 55133 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:40:07,980 INFO 55133 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:43:37,592 INFO 55133 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:43:37,607 INFO 55133 [egg-sequelize](5ms) Executed (default): INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2020-02-08 21:43:37,619 ERROR 55133 [-/127.0.0.1/-/35ms POST /api/setting] nodejs.SequelizeDatabaseError: Incorrect integer value: '' for column 'wcb_scheduler' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:49:29)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'wcb_scheduler' at row 1","sql":"INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'wcb_scheduler' at row 1","sql":"INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);","parameters":["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]}
+sql: "INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`wcb_scheduler`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);"
+parameters: ["smtp.qq.com","465","982254371@qq.com","dledetiyvznubdjb","","","2020-02-08 21:43:37","2020-02-08 21:43:37"]
+pid: 55133
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:46:06,923 INFO 55356 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:46:10,279 INFO 55358 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:51:19,696 INFO 55503 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:51:23,373 INFO 55503 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:51:23,384 ERROR 55503 [-/127.0.0.1/-/47ms POST /api/setting] nodejs.SequelizeDatabaseError: Unknown column 'wcb_scheduler' in 'field list'
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1755:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:36:40)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:44)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+sql: "SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"
+parameters: undefined
+pid: 55503
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:51:24,555 INFO 55503 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:51:24,560 ERROR 55503 [-/127.0.0.1/-/8ms POST /api/setting] nodejs.SequelizeDatabaseError: Unknown column 'wcb_scheduler' in 'field list'
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:1755:8)
+    at Setting.create (/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js:36:40)
+    at apiSetting.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js:37:44)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'wcb_scheduler' in 'field list'","sql":"SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"}
+sql: "SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `wcb_scheduler` AS `wcbScheduler`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;"
+parameters: undefined
+pid: 55503
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:52:21,318 INFO 55520 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:52:21,685 INFO 55520 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:52:21,716 INFO 55520 [egg-sequelize](6ms) Executed (default): INSERT INTO `wcb_settings` (`wcb_object_id`,`wcb_server_address`,`wcb_server_ports`,`wcb_mail_from`,`wcb_auth_pass`,`wcb_mail_to`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2020-02-08 21:52:24,266 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 21:52:41,800 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:52:41,831 INFO 55521 [egg-sequelize](5ms) Executed (default): UPDATE `wcb_settings` SET `wcb_server_address`=?,`wcb_server_ports`=?,`wcb_mail_from`=?,`wcb_auth_pass`=?,`wcb_mail_to`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 21:52:51,138 INFO 55521 [egg-sequelize](3ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:53:02,648 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:53:02,662 INFO 55521 [egg-sequelize](4ms) Executed (default): UPDATE `wcb_settings` SET `wcb_server_address`=?,`wcb_server_ports`=?,`wcb_mail_from`=?,`wcb_auth_pass`=?,`wcb_mail_to`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 21:53:12,362 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 21:53:12,369 INFO 55521 [egg-sequelize](3ms) Executed (default): UPDATE `wcb_settings` SET `wcb_server_address`=?,`wcb_server_ports`=?,`wcb_mail_from`=?,`wcb_auth_pass`=?,`wcb_mail_to`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 21:53:33,935 INFO 55521 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:53:46,183 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList` WHERE `wcbWebsiteList`.`wcb_web_site` = 'http://www.ls114.cn/forum-69-1.html' LIMIT 1;
+2020-02-08 21:53:46,199 INFO 55521 [egg-sequelize](5ms) Executed (default): INSERT INTO `wcb_website_lists` (`wcb_object_id`,`wcb_web_site`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?);
+2020-02-08 21:53:46,301 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:56:13,343 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList` WHERE `wcbWebsiteList`.`wcb_web_site` = 'http://www.ls114.cn/forum-17-1.html' LIMIT 1;
+2020-02-08 21:56:13,350 INFO 55521 [egg-sequelize](3ms) Executed (default): INSERT INTO `wcb_website_lists` (`wcb_object_id`,`wcb_web_site`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?);
+2020-02-08 21:56:13,433 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:56:14,477 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:56:15,716 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:56:33,303 INFO 55521 [egg-sequelize](2ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 21:56:33,331 ERROR 55521 [-/127.0.0.1/-/27ms POST /api/category] nodejs.SequelizeDatabaseError: Incorrect string value: '\xE6\xBA\xA7\xE6\xB0\xB4...' for column 'wcb_name' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:71:30)
+    at apiCategory.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js:59:45)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水长跑运动","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:33","2020-02-08 21:56:33"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:56:33,410 INFO 55521 [egg-sequelize](0ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:56:36,903 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:56:41,748 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:56:58,218 INFO 55521 [egg-sequelize](1ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 21:56:58,254 ERROR 55521 [-/127.0.0.1/-/21ms POST /api/category] nodejs.SequelizeDatabaseError: Incorrect string value: '\xE6\xBA\xA7\xE6\xB0\xB4...' for column 'wcb_name' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.insert (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:885:27)
+    at Promise.try.then.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3985:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3962:8)
+    at Function.create (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:2226:8)
+    at Category.create (/Users/weichangbin/Desktop/reptiles/server/app/service/category.js:71:30)
+    at apiCategory.create (/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js:59:45)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at gzip (/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js:6:11)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/weichangbin/Desktop/reptiles/server/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE6\\xBA\\xA7\\xE6\\xB0\\xB4...' for column 'wcb_name' at row 1","sql":"INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]}
+sql: "INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: ["溧水长跑","[{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-69-1.html\"},{\"desc\":\"\",\"url\":\"http://www.ls114.cn/forum-17-1.html\"}]","长跑","0","2020-02-08 21:56:58","2020-02-08 21:56:58"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 21:56:58,384 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:58:34,216 INFO 55521 [egg-sequelize](4ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:58:49,304 INFO 55521 [egg-sequelize](3ms) Executed (default): INSERT INTO `wcb_website_types` (`wcb_object_id`,`wcb_name`,`wcb_site_list`,`wcb_key_str`,`wcb_switch`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?,?,?);
+2020-02-08 21:58:49,357 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:58:53,396 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:58:57,639 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:59:02,586 INFO 55521 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1';
+2020-02-08 21:59:02,594 INFO 55521 [egg-sequelize](3ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_name`=?,`wcb_site_list`=?,`wcb_key_str`=?,`wcb_switch`=?,`updated_at`=? WHERE `wcb_object_id` = ?
+2020-02-08 21:59:02,666 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:59:05,204 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_web_site` AS `wcbWebSite`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_lists` AS `wcbWebsiteList`;
+2020-02-08 21:59:06,206 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType`;
+2020-02-08 21:59:07,761 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:00:12,628 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:00:26,559 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:00:50,673 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:01:07,783 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:01:40,812 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:02:16,570 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:02:32,878 INFO 55521 [egg-sequelize](2ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:03:00,528 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:03:08,969 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:03:15,199 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:03:58,246 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:04:07,912 INFO 55521 [egg-sequelize](1ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:53:36,803 INFO 55521 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 22:53:36,843 INFO 55521 [egg-sequelize](5ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1' LIMIT 1;
+2020-02-08 22:54:19,854 INFO 55521 [egg-sequelize](21ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?
+2020-02-08 23:01:53,209 INFO 56624 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2020-02-08 23:31:41,953 INFO 56624 [egg-sequelize](21ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_server_address` AS `wcbServerAddress`, `wcb_server_ports` AS `wcbServerPorts`, `wcb_mail_from` AS `wcbMailFrom`, `wcb_auth_pass` AS `wcbAuthPass`, `wcb_mail_to` AS `wcbMailTo`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_settings` AS `wcbSetting`;
+2020-02-08 23:31:41,992 INFO 56624 [egg-sequelize](8ms) Executed (default): SELECT `wcb_object_id` AS `wcbObjectId`, `wcb_name` AS `wcbName`, `wcb_site_list` AS `wcbSiteList`, `wcb_key_str` AS `wcbKeyStr`, `wcb_switch` AS `wcbSwitch`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `wcb_website_types` AS `wcbWebsiteType` WHERE `wcbWebsiteType`.`wcb_switch` = '1' LIMIT 1;
+2020-02-08 23:52:25,733 INFO 56624 [egg-sequelize](22ms) Executed (default): UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?

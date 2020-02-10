@@ -1,0 +1,333 @@
+2020-02-08 19:53:28,685 INFO 52314 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 19:53:29,626 INFO 52314 [egg-multipart] stream mode enable
+2020-02-08 19:53:30,663 INFO 52314 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 19:53:30,668 INFO 52314 [egg-security] use methodnoallow middleware
+2020-02-08 19:53:30,671 INFO 52314 [egg-security] use noopen middleware
+2020-02-08 19:53:30,674 INFO 52314 [egg-security] use nosniff middleware
+2020-02-08 19:53:30,676 INFO 52314 [egg-security] use xssProtection middleware
+2020-02-08 19:53:30,679 INFO 52314 [egg-security] use xframe middleware
+2020-02-08 19:53:30,684 INFO 52314 [egg-security] use dta middleware
+2020-02-08 19:53:30,687 INFO 52314 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 19:53:30,864 INFO 52314 [egg:core] dump config after load, 24ms
+2020-02-08 19:53:31,003 INFO 52314 [egg-watcher:application] watcher start success
+2020-02-08 19:53:31,141 INFO 52314 [egg:core] dump config after ready, 77ms
+2020-02-08 19:54:22,091 INFO 52335 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 19:54:22,946 INFO 52335 [egg-multipart] stream mode enable
+2020-02-08 19:54:24,013 INFO 52335 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 19:54:24,019 INFO 52335 [egg-security] use methodnoallow middleware
+2020-02-08 19:54:24,020 INFO 52335 [egg-security] use noopen middleware
+2020-02-08 19:54:24,021 INFO 52335 [egg-security] use nosniff middleware
+2020-02-08 19:54:24,022 INFO 52335 [egg-security] use xssProtection middleware
+2020-02-08 19:54:24,024 INFO 52335 [egg-security] use xframe middleware
+2020-02-08 19:54:24,026 INFO 52335 [egg-security] use dta middleware
+2020-02-08 19:54:24,026 INFO 52335 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 19:54:24,045 INFO 52335 [egg:core] dump config after load, 7ms
+2020-02-08 19:54:24,106 INFO 52335 [egg-watcher:application] watcher start success
+2020-02-08 19:54:24,242 INFO 52335 [egg:core] dump config after ready, 14ms
+2020-02-08 19:55:33,328 INFO 52349 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 19:55:34,913 INFO 52349 [egg-multipart] stream mode enable
+2020-02-08 19:55:36,332 INFO 52349 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 19:55:36,336 INFO 52349 [egg-security] use methodnoallow middleware
+2020-02-08 19:55:36,338 INFO 52349 [egg-security] use noopen middleware
+2020-02-08 19:55:36,340 INFO 52349 [egg-security] use nosniff middleware
+2020-02-08 19:55:36,342 INFO 52349 [egg-security] use xssProtection middleware
+2020-02-08 19:55:36,343 INFO 52349 [egg-security] use xframe middleware
+2020-02-08 19:55:36,345 INFO 52349 [egg-security] use dta middleware
+2020-02-08 19:55:36,345 INFO 52349 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 19:55:36,375 INFO 52349 [egg:core] dump config after load, 13ms
+2020-02-08 19:55:36,432 INFO 52349 [egg-watcher:application] watcher start success
+2020-02-08 19:55:36,583 INFO 52349 [egg:core] dump config after ready, 25ms
+2020-02-08 19:56:28,179 INFO 52373 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 19:56:28,574 INFO 52373 [egg-multipart] stream mode enable
+2020-02-08 19:56:29,166 INFO 52373 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 19:56:29,170 INFO 52373 [egg-security] use methodnoallow middleware
+2020-02-08 19:56:29,172 INFO 52373 [egg-security] use noopen middleware
+2020-02-08 19:56:29,175 INFO 52373 [egg-security] use nosniff middleware
+2020-02-08 19:56:29,177 INFO 52373 [egg-security] use xssProtection middleware
+2020-02-08 19:56:29,178 INFO 52373 [egg-security] use xframe middleware
+2020-02-08 19:56:29,180 INFO 52373 [egg-security] use dta middleware
+2020-02-08 19:56:29,180 INFO 52373 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 19:56:29,207 INFO 52373 [egg:core] dump config after load, 12ms
+2020-02-08 19:56:29,270 INFO 52373 [egg-watcher:application] watcher start success
+2020-02-08 19:56:29,331 INFO 52373 [egg:core] dump config after ready, 11ms
+2020-02-08 20:02:47,318 INFO 52576 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:02:48,220 INFO 52576 [egg-multipart] stream mode enable
+2020-02-08 20:02:49,113 INFO 52576 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:02:49,119 INFO 52576 [egg-security] use methodnoallow middleware
+2020-02-08 20:02:49,120 INFO 52576 [egg-security] use noopen middleware
+2020-02-08 20:02:49,122 INFO 52576 [egg-security] use nosniff middleware
+2020-02-08 20:02:49,124 INFO 52576 [egg-security] use xssProtection middleware
+2020-02-08 20:02:49,126 INFO 52576 [egg-security] use xframe middleware
+2020-02-08 20:02:49,128 INFO 52576 [egg-security] use dta middleware
+2020-02-08 20:02:49,128 INFO 52576 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:02:49,153 INFO 52576 [egg:core] dump config after load, 8ms
+2020-02-08 20:02:49,241 INFO 52576 [egg-watcher:application] watcher start success
+2020-02-08 20:02:49,304 INFO 52576 [egg:core] dump config after ready, 9ms
+2020-02-08 20:03:13,178 INFO 52595 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:03:14,561 INFO 52595 [egg-multipart] stream mode enable
+2020-02-08 20:03:16,052 INFO 52595 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:03:16,059 INFO 52595 [egg-security] use methodnoallow middleware
+2020-02-08 20:03:16,061 INFO 52595 [egg-security] use noopen middleware
+2020-02-08 20:03:16,063 INFO 52595 [egg-security] use nosniff middleware
+2020-02-08 20:03:16,064 INFO 52595 [egg-security] use xssProtection middleware
+2020-02-08 20:03:16,066 INFO 52595 [egg-security] use xframe middleware
+2020-02-08 20:03:16,068 INFO 52595 [egg-security] use dta middleware
+2020-02-08 20:03:16,068 INFO 52595 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:03:16,097 INFO 52595 [egg:core] dump config after load, 12ms
+2020-02-08 20:03:16,147 INFO 52595 [egg-watcher:application] watcher start success
+2020-02-08 20:03:16,273 INFO 52595 [egg:core] dump config after ready, 15ms
+2020-02-08 20:03:48,867 INFO 52599 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:03:50,295 INFO 52599 [egg-multipart] stream mode enable
+2020-02-08 20:03:51,775 INFO 52599 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:03:51,779 INFO 52599 [egg-security] use methodnoallow middleware
+2020-02-08 20:03:51,780 INFO 52599 [egg-security] use noopen middleware
+2020-02-08 20:03:51,782 INFO 52599 [egg-security] use nosniff middleware
+2020-02-08 20:03:51,783 INFO 52599 [egg-security] use xssProtection middleware
+2020-02-08 20:03:51,784 INFO 52599 [egg-security] use xframe middleware
+2020-02-08 20:03:51,786 INFO 52599 [egg-security] use dta middleware
+2020-02-08 20:03:51,786 INFO 52599 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:03:51,806 INFO 52599 [egg:core] dump config after load, 8ms
+2020-02-08 20:03:51,847 INFO 52599 [egg-watcher:application] watcher start success
+2020-02-08 20:03:51,940 INFO 52599 [egg:core] dump config after ready, 9ms
+2020-02-08 20:39:44,626 INFO 53534 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:39:45,480 INFO 53534 [egg-multipart] stream mode enable
+2020-02-08 20:39:46,486 INFO 53534 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:39:46,491 INFO 53534 [egg-security] use methodnoallow middleware
+2020-02-08 20:39:46,493 INFO 53534 [egg-security] use noopen middleware
+2020-02-08 20:39:46,494 INFO 53534 [egg-security] use nosniff middleware
+2020-02-08 20:39:46,496 INFO 53534 [egg-security] use xssProtection middleware
+2020-02-08 20:39:46,498 INFO 53534 [egg-security] use xframe middleware
+2020-02-08 20:39:46,499 INFO 53534 [egg-security] use dta middleware
+2020-02-08 20:39:46,499 INFO 53534 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:39:46,532 INFO 53534 [egg:core] dump config after load, 16ms
+2020-02-08 20:39:46,591 INFO 53534 [egg-watcher:application] watcher start success
+2020-02-08 20:39:46,692 INFO 53534 [egg:core] dump config after ready, 10ms
+2020-02-08 20:40:01,959 INFO 53538 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:40:03,087 INFO 53538 [egg-multipart] stream mode enable
+2020-02-08 20:40:04,052 INFO 53538 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:40:04,056 INFO 53538 [egg-security] use methodnoallow middleware
+2020-02-08 20:40:04,058 INFO 53538 [egg-security] use noopen middleware
+2020-02-08 20:40:04,060 INFO 53538 [egg-security] use nosniff middleware
+2020-02-08 20:40:04,062 INFO 53538 [egg-security] use xssProtection middleware
+2020-02-08 20:40:04,063 INFO 53538 [egg-security] use xframe middleware
+2020-02-08 20:40:04,066 INFO 53538 [egg-security] use dta middleware
+2020-02-08 20:40:04,066 INFO 53538 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:40:04,087 INFO 53538 [egg:core] dump config after load, 8ms
+2020-02-08 20:40:04,133 INFO 53538 [egg-watcher:application] watcher start success
+2020-02-08 20:40:04,240 INFO 53538 [egg:core] dump config after ready, 11ms
+2020-02-08 20:41:55,063 INFO 53565 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:41:56,262 INFO 53565 [egg-multipart] stream mode enable
+2020-02-08 20:41:57,666 INFO 53565 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:41:57,671 INFO 53565 [egg-security] use methodnoallow middleware
+2020-02-08 20:41:57,672 INFO 53565 [egg-security] use noopen middleware
+2020-02-08 20:41:57,675 INFO 53565 [egg-security] use nosniff middleware
+2020-02-08 20:41:57,677 INFO 53565 [egg-security] use xssProtection middleware
+2020-02-08 20:41:57,678 INFO 53565 [egg-security] use xframe middleware
+2020-02-08 20:41:57,679 INFO 53565 [egg-security] use dta middleware
+2020-02-08 20:41:57,679 INFO 53565 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:41:57,702 INFO 53565 [egg:core] dump config after load, 11ms
+2020-02-08 20:41:57,776 INFO 53565 [egg-watcher:application] watcher start success
+2020-02-08 20:41:57,842 INFO 53565 [egg:core] dump config after ready, 13ms
+2020-02-08 20:48:23,743 INFO 53724 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 20:48:24,723 INFO 53724 [egg-multipart] stream mode enable
+2020-02-08 20:48:25,700 INFO 53724 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 20:48:25,704 INFO 53724 [egg-security] use methodnoallow middleware
+2020-02-08 20:48:25,706 INFO 53724 [egg-security] use noopen middleware
+2020-02-08 20:48:25,708 INFO 53724 [egg-security] use nosniff middleware
+2020-02-08 20:48:25,710 INFO 53724 [egg-security] use xssProtection middleware
+2020-02-08 20:48:25,711 INFO 53724 [egg-security] use xframe middleware
+2020-02-08 20:48:25,712 INFO 53724 [egg-security] use dta middleware
+2020-02-08 20:48:25,712 INFO 53724 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 20:48:25,735 INFO 53724 [egg:core] dump config after load, 12ms
+2020-02-08 20:48:25,814 INFO 53724 [egg-watcher:application] watcher start success
+2020-02-08 20:48:25,881 INFO 53724 [egg:core] dump config after ready, 13ms
+2020-02-08 21:37:22,229 INFO 55097 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:37:23,454 INFO 55097 [egg-multipart] stream mode enable
+2020-02-08 21:37:24,628 INFO 55097 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:37:24,631 INFO 55097 [egg-security] use methodnoallow middleware
+2020-02-08 21:37:24,632 INFO 55097 [egg-security] use noopen middleware
+2020-02-08 21:37:24,635 INFO 55097 [egg-security] use nosniff middleware
+2020-02-08 21:37:24,636 INFO 55097 [egg-security] use xssProtection middleware
+2020-02-08 21:37:24,638 INFO 55097 [egg-security] use xframe middleware
+2020-02-08 21:37:24,639 INFO 55097 [egg-security] use dta middleware
+2020-02-08 21:37:24,639 INFO 55097 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:37:24,670 INFO 55097 [egg:core] dump config after load, 12ms
+2020-02-08 21:37:24,791 INFO 55097 [egg-watcher:application] watcher start success
+2020-02-08 21:37:24,873 INFO 55097 [egg:core] dump config after ready, 14ms
+2020-02-08 21:37:30,331 INFO 55099 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:37:31,150 INFO 55099 [egg-multipart] stream mode enable
+2020-02-08 21:37:31,934 INFO 55099 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:37:31,937 INFO 55099 [egg-security] use methodnoallow middleware
+2020-02-08 21:37:31,937 INFO 55099 [egg-security] use noopen middleware
+2020-02-08 21:37:31,938 INFO 55099 [egg-security] use nosniff middleware
+2020-02-08 21:37:31,939 INFO 55099 [egg-security] use xssProtection middleware
+2020-02-08 21:37:31,939 INFO 55099 [egg-security] use xframe middleware
+2020-02-08 21:37:31,940 INFO 55099 [egg-security] use dta middleware
+2020-02-08 21:37:31,940 INFO 55099 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:37:31,972 INFO 55099 [egg:core] dump config after load, 9ms
+2020-02-08 21:37:32,048 INFO 55099 [egg-watcher:application] watcher start success
+2020-02-08 21:37:32,104 INFO 55099 [egg:core] dump config after ready, 9ms
+2020-02-08 21:38:05,791 INFO 55118 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:38:08,111 INFO 55118 [egg-multipart] stream mode enable
+2020-02-08 21:38:09,284 INFO 55118 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:38:09,287 INFO 55118 [egg-security] use methodnoallow middleware
+2020-02-08 21:38:09,289 INFO 55118 [egg-security] use noopen middleware
+2020-02-08 21:38:09,291 INFO 55118 [egg-security] use nosniff middleware
+2020-02-08 21:38:09,292 INFO 55118 [egg-security] use xssProtection middleware
+2020-02-08 21:38:09,294 INFO 55118 [egg-security] use xframe middleware
+2020-02-08 21:38:09,296 INFO 55118 [egg-security] use dta middleware
+2020-02-08 21:38:09,296 INFO 55118 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:38:09,324 INFO 55118 [egg:core] dump config after load, 12ms
+2020-02-08 21:38:09,376 INFO 55118 [egg-watcher:application] watcher start success
+2020-02-08 21:38:09,483 INFO 55118 [egg:core] dump config after ready, 7ms
+2020-02-08 21:38:26,041 INFO 55121 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:38:26,656 INFO 55121 [egg-multipart] stream mode enable
+2020-02-08 21:38:27,356 INFO 55121 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:38:27,360 INFO 55121 [egg-security] use methodnoallow middleware
+2020-02-08 21:38:27,362 INFO 55121 [egg-security] use noopen middleware
+2020-02-08 21:38:27,363 INFO 55121 [egg-security] use nosniff middleware
+2020-02-08 21:38:27,364 INFO 55121 [egg-security] use xssProtection middleware
+2020-02-08 21:38:27,366 INFO 55121 [egg-security] use xframe middleware
+2020-02-08 21:38:27,367 INFO 55121 [egg-security] use dta middleware
+2020-02-08 21:38:27,367 INFO 55121 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:38:27,388 INFO 55121 [egg:core] dump config after load, 9ms
+2020-02-08 21:38:27,485 INFO 55121 [egg-watcher:application] watcher start success
+2020-02-08 21:38:27,643 INFO 55121 [egg:core] dump config after ready, 10ms
+2020-02-08 21:38:49,788 INFO 55133 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:38:50,565 INFO 55133 [egg-multipart] stream mode enable
+2020-02-08 21:38:51,654 INFO 55133 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:38:51,659 INFO 55133 [egg-security] use methodnoallow middleware
+2020-02-08 21:38:51,660 INFO 55133 [egg-security] use noopen middleware
+2020-02-08 21:38:51,664 INFO 55133 [egg-security] use nosniff middleware
+2020-02-08 21:38:51,667 INFO 55133 [egg-security] use xssProtection middleware
+2020-02-08 21:38:51,669 INFO 55133 [egg-security] use xframe middleware
+2020-02-08 21:38:51,671 INFO 55133 [egg-security] use dta middleware
+2020-02-08 21:38:51,671 INFO 55133 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:38:51,703 INFO 55133 [egg:core] dump config after load, 11ms
+2020-02-08 21:38:51,827 INFO 55133 [egg-watcher:application] watcher start success
+2020-02-08 21:38:51,909 INFO 55133 [egg:core] dump config after ready, 26ms
+2020-02-08 21:46:04,432 INFO 55356 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:46:05,516 INFO 55356 [egg-multipart] stream mode enable
+2020-02-08 21:46:06,732 INFO 55356 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:46:06,736 INFO 55356 [egg-security] use methodnoallow middleware
+2020-02-08 21:46:06,737 INFO 55356 [egg-security] use noopen middleware
+2020-02-08 21:46:06,739 INFO 55356 [egg-security] use nosniff middleware
+2020-02-08 21:46:06,741 INFO 55356 [egg-security] use xssProtection middleware
+2020-02-08 21:46:06,742 INFO 55356 [egg-security] use xframe middleware
+2020-02-08 21:46:06,744 INFO 55356 [egg-security] use dta middleware
+2020-02-08 21:46:06,744 INFO 55356 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:46:06,763 INFO 55356 [egg:core] dump config after load, 9ms
+2020-02-08 21:46:06,827 INFO 55356 [egg-watcher:application] watcher start success
+2020-02-08 21:46:06,939 INFO 55356 [egg:core] dump config after ready, 7ms
+2020-02-08 21:46:08,832 INFO 55358 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:46:09,405 INFO 55358 [egg-multipart] stream mode enable
+2020-02-08 21:46:10,009 INFO 55358 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:46:10,013 INFO 55358 [egg-security] use methodnoallow middleware
+2020-02-08 21:46:10,014 INFO 55358 [egg-security] use noopen middleware
+2020-02-08 21:46:10,014 INFO 55358 [egg-security] use nosniff middleware
+2020-02-08 21:46:10,015 INFO 55358 [egg-security] use xssProtection middleware
+2020-02-08 21:46:10,021 INFO 55358 [egg-security] use xframe middleware
+2020-02-08 21:46:10,021 INFO 55358 [egg-security] use dta middleware
+2020-02-08 21:46:10,021 INFO 55358 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:46:10,054 INFO 55358 [egg:core] dump config after load, 12ms
+2020-02-08 21:46:10,161 INFO 55358 [egg-watcher:application] watcher start success
+2020-02-08 21:46:10,312 INFO 55358 [egg:core] dump config after ready, 15ms
+2020-02-08 21:51:18,220 INFO 55503 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:51:18,826 INFO 55503 [egg-multipart] stream mode enable
+2020-02-08 21:51:19,515 INFO 55503 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:51:19,521 INFO 55503 [egg-security] use methodnoallow middleware
+2020-02-08 21:51:19,522 INFO 55503 [egg-security] use noopen middleware
+2020-02-08 21:51:19,524 INFO 55503 [egg-security] use nosniff middleware
+2020-02-08 21:51:19,526 INFO 55503 [egg-security] use xssProtection middleware
+2020-02-08 21:51:19,528 INFO 55503 [egg-security] use xframe middleware
+2020-02-08 21:51:19,530 INFO 55503 [egg-security] use dta middleware
+2020-02-08 21:51:19,530 INFO 55503 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:51:19,552 INFO 55503 [egg:core] dump config after load, 9ms
+2020-02-08 21:51:19,611 INFO 55503 [egg-watcher:application] watcher start success
+2020-02-08 21:51:19,761 INFO 55503 [egg:core] dump config after ready, 56ms
+2020-02-08 21:52:19,318 INFO 55520 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:52:20,204 INFO 55520 [egg-multipart] stream mode enable
+2020-02-08 21:52:21,150 INFO 55520 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:52:21,156 INFO 55520 [egg-security] use methodnoallow middleware
+2020-02-08 21:52:21,158 INFO 55520 [egg-security] use noopen middleware
+2020-02-08 21:52:21,160 INFO 55520 [egg-security] use nosniff middleware
+2020-02-08 21:52:21,161 INFO 55520 [egg-security] use xssProtection middleware
+2020-02-08 21:52:21,163 INFO 55520 [egg-security] use xframe middleware
+2020-02-08 21:52:21,165 INFO 55520 [egg-security] use dta middleware
+2020-02-08 21:52:21,165 INFO 55520 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:52:21,186 INFO 55520 [egg:core] dump config after load, 7ms
+2020-02-08 21:52:21,270 INFO 55520 [egg-watcher:application] watcher start success
+2020-02-08 21:52:21,333 INFO 55520 [egg:core] dump config after ready, 9ms
+2020-02-08 21:52:22,924 INFO 55521 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 21:52:23,567 INFO 55521 [egg-multipart] stream mode enable
+2020-02-08 21:52:24,111 INFO 55521 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 21:52:24,114 INFO 55521 [egg-security] use methodnoallow middleware
+2020-02-08 21:52:24,115 INFO 55521 [egg-security] use noopen middleware
+2020-02-08 21:52:24,116 INFO 55521 [egg-security] use nosniff middleware
+2020-02-08 21:52:24,116 INFO 55521 [egg-security] use xssProtection middleware
+2020-02-08 21:52:24,116 INFO 55521 [egg-security] use xframe middleware
+2020-02-08 21:52:24,117 INFO 55521 [egg-security] use dta middleware
+2020-02-08 21:52:24,117 INFO 55521 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 21:52:24,145 INFO 55521 [egg:core] dump config after load, 15ms
+2020-02-08 21:52:24,217 INFO 55521 [egg-watcher:application] watcher start success
+2020-02-08 21:52:24,283 INFO 55521 [egg:core] dump config after ready, 13ms
+2020-02-08 22:19:32,438 WARN 55521 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-08 22:41:54,449 WARN 55521 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-02-08 22:54:19,870 ERROR 55521 nodejs.SequelizeDatabaseError: Incorrect string value: '\xE5\xB9\xB4\xE6\x9C\xAB...' for column 'wcb_site_list' at row 1
+    at Query.formatError (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/weichangbin/Desktop/reptiles/server/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/weichangbin/Desktop/reptiles/server/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.bulkUpdate (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/query-interface.js:1044:27)
+    at Promise.try.then.then.then.results (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3222:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.update (/Users/weichangbin/Desktop/reptiles/server/node_modules/sequelize/lib/model.js:3203:8)
+    at Promise.all.then (/Users/weichangbin/Desktop/reptiles/server/app/service/request.js:35:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE5\\xB9\\xB4\\xE6\\x9C\\xAB...' for column 'wcb_site_list' at row 1","sql":"UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?","parameters":["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect string value: '\\xE5\\xB9\\xB4\\xE6\\x9C\\xAB...' for column 'wcb_site_list' at row 1","sql":"UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?","parameters":["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]}
+sql: "UPDATE `wcb_website_types` SET `wcb_site_list`=?,`updated_at`=? WHERE `wcb_switch` = ?"
+parameters: ["[{\"url\":\"http://www.ls114.cn/forum-69-1.html\",\"desc\":\"<p><a href=http://www.ls114.cn/thread-485304-1-1.html>年末朝阳    长跑迎春</a><p>\"},{\"url\":\"http://www.ls114.cn/forum-17-1.html\",\"desc\":\"\"}]","2020-02-08 22:54:19","1"]
+pid: 55521
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-08 23:01:43,200 INFO 56624 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-02-08 23:01:48,456 INFO 56624 [egg-multipart] stream mode enable
+2020-02-08 23:01:52,514 INFO 56624 [egg-static] starting static serve /public/ -> /Users/weichangbin/Desktop/reptiles/server/app/public
+2020-02-08 23:01:52,560 INFO 56624 [egg-security] use methodnoallow middleware
+2020-02-08 23:01:52,563 INFO 56624 [egg-security] use noopen middleware
+2020-02-08 23:01:52,566 INFO 56624 [egg-security] use nosniff middleware
+2020-02-08 23:01:52,570 INFO 56624 [egg-security] use xssProtection middleware
+2020-02-08 23:01:52,573 INFO 56624 [egg-security] use xframe middleware
+2020-02-08 23:01:52,586 INFO 56624 [egg-security] use dta middleware
+2020-02-08 23:01:52,586 INFO 56624 [egg-security] compose 6 middlewares into one security middleware
+2020-02-08 23:01:52,702 INFO 56624 [egg:core] dump config after load, 67ms
+2020-02-08 23:01:52,912 INFO 56624 [egg-watcher:application] watcher start success
+2020-02-08 23:01:53,275 INFO 56624 [egg:core] dump config after ready, 37ms
+2020-02-08 23:59:48,490 INFO 56624 [egg-logrotator] clean all log before 31 days
+2020-02-08 23:59:49,460 INFO 56624 [egg-logrotator] broadcast log-reload
+2020-02-08 23:59:49,460 INFO 56624 [egg-logrotator] rotate files success by DayRotator, files ["/Users/weichangbin/Desktop/reptiles/server/logs/reptiles/common-error.log -> /Users/weichangbin/Desktop/reptiles/server/logs/reptiles/common-error.log.2020-02-08","/Users/weichangbin/Desktop/reptiles/server/logs/reptiles/reptiles-web.log -> /Users/weichangbin/Desktop/reptiles/server/logs/reptiles/reptiles-web.log.2020-02-08","/Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-web.log -> /Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-web.log.2020-02-08","/Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-schedule.log -> /Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-schedule.log.2020-02-08","/Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-agent.log -> /Users/weichangbin/Desktop/reptiles/server/logs/reptiles/egg-agent.log.2020-02-08"]

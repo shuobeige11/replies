@@ -1,0 +1,265 @@
+2020-02-08 23:59:49,484 INFO 56619 [egg-logrotator] agent logger reload: got log-reload message
+2020-02-09 00:40:48,357 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 1826215ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 03:44:26,597 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 932043ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 05:32:43,082 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 6496081ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 07:15:07,220 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 6144092ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 08:44:40,239 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 5332251ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 08:59:12,317 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 871795ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 09:58:41,527 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 2228960ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 10:36:55,509 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 2165139ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 10:56:44,320 WARN 56619 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app/service/setting.js change
+2020-02-09 10:56:43,928 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1584,"blocks":8,"atimeMs":1581217003765.1377,"mtimeMs":1581217003768.5635,"ctimeMs":1581217003768.5635,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:56:43.765Z","mtime":"2020-02-09T02:56:43.769Z","ctime":"2020-02-09T02:56:43.769Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 10:56:44,109 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1584,"blocks":8,"atimeMs":1581217003929.9175,"mtimeMs":1581217003931.9893,"ctimeMs":1581217003931.9893,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:56:43.930Z","mtime":"2020-02-09T02:56:43.932Z","ctime":"2020-02-09T02:56:43.932Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 10:56:44,112 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1584,"blocks":8,"atimeMs":1581217003929.9175,"mtimeMs":1581217003931.9893,"ctimeMs":1581217003931.9893,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:56:43.930Z","mtime":"2020-02-09T02:56:43.932Z","ctime":"2020-02-09T02:56:43.932Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 10:57:17,958 WARN 56619 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app/service/setting.js change
+2020-02-09 10:57:18,239 WARN 56619 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app/service/setting.js change
+2020-02-09 10:57:17,754 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1592,"blocks":8,"atimeMs":1581217037690.3352,"mtimeMs":1581217037693.308,"ctimeMs":1581217037693.308,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:57:17.690Z","mtime":"2020-02-09T02:57:17.693Z","ctime":"2020-02-09T02:57:17.693Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 10:57:17,987 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1592,"blocks":8,"atimeMs":1581217037975.2593,"mtimeMs":1581217037976.7495,"ctimeMs":1581217037976.7495,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:57:17.975Z","mtime":"2020-02-09T02:57:17.977Z","ctime":"2020-02-09T02:57:17.977Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 10:57:18,038 INFO 56619 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1592,"blocks":8,"atimeMs":1581217037975.2593,"mtimeMs":1581217037976.7495,"ctimeMs":1581217037976.7495,"birthtimeMs":1579512631840.4585,"atime":"2020-02-09T02:57:17.975Z","mtime":"2020-02-09T02:57:17.977Z","ctime":"2020-02-09T02:57:17.977Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 11:53:44,474 ERROR 56619 nodejs.ClusterClientNoResponseError: client no response in 339541ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56619
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 11:54:15,905 INFO 63719 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-02-09 11:54:17,022 INFO 63719 [egg:core] dump config after load, 10ms
+2020-02-09 11:54:17,874 INFO 63719 [egg-watcher] Start watching: ["/Users/weichangbin/Desktop/reptiles/server/app","/Users/weichangbin/Desktop/reptiles/server/config","/Users/weichangbin/Desktop/reptiles/server/mocks","/Users/weichangbin/Desktop/reptiles/server/mocks_proxy","/Users/weichangbin/Desktop/reptiles/server/app.js"]
+2020-02-09 11:54:17,874 INFO 63719 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app"
+2020-02-09 11:54:17,875 INFO 63719 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/config"
+2020-02-09 11:54:17,875 INFO 63719 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks"
+2020-02-09 11:54:17,875 INFO 63719 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks_proxy"
+2020-02-09 11:54:17,875 INFO 63719 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app.js"
+2020-02-09 11:54:17,878 INFO 63719 [egg-watcher:agent] watcher start success
+2020-02-09 11:54:17,997 INFO 63719 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-02-09 11:54:18,044 INFO 63719 [egg:core] dump config after ready, 41ms
+2020-02-09 12:27:51,816 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 709966ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 12:52:19,071 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 827084ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 13:42:30,022 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 2262467ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 14:20:56,247 ERROR 63719 nodejs.ClusterClientNoResponseError: client no response in 165695ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 63719
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 14:24:27,358 INFO 66111 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-02-09 14:24:28,767 INFO 66111 [egg:core] dump config after load, 14ms
+2020-02-09 14:24:30,096 INFO 66111 [egg-watcher] Start watching: ["/Users/weichangbin/Desktop/reptiles/server/app","/Users/weichangbin/Desktop/reptiles/server/config","/Users/weichangbin/Desktop/reptiles/server/mocks","/Users/weichangbin/Desktop/reptiles/server/mocks_proxy","/Users/weichangbin/Desktop/reptiles/server/app.js"]
+2020-02-09 14:24:30,096 INFO 66111 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app"
+2020-02-09 14:24:30,097 INFO 66111 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/config"
+2020-02-09 14:24:30,097 INFO 66111 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks"
+2020-02-09 14:24:30,097 INFO 66111 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks_proxy"
+2020-02-09 14:24:30,097 INFO 66111 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app.js"
+2020-02-09 14:24:30,100 INFO 66111 [egg-watcher:agent] watcher start success
+2020-02-09 14:24:30,444 INFO 66111 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-02-09 14:24:30,538 INFO 66111 [egg:core] dump config after ready, 6ms
+2020-02-09 14:30:07,567 WARN 66111 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app/service/request.js change
+2020-02-09 14:30:07,103 INFO 66111 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581229807037.6128,"mtimeMs":1581229807040.5154,"ctimeMs":1581229807040.5154,"birthtimeMs":1579488729061.483,"atime":"2020-02-09T06:30:07.038Z","mtime":"2020-02-09T06:30:07.041Z","ctime":"2020-02-09T06:30:07.041Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 14:30:07,214 INFO 66111 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581229807201.844,"mtimeMs":1581229807202.5046,"ctimeMs":1581229807202.5046,"birthtimeMs":1579488729061.483,"atime":"2020-02-09T06:30:07.202Z","mtime":"2020-02-09T06:30:07.203Z","ctime":"2020-02-09T06:30:07.203Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 14:30:07,264 INFO 66111 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581229807201.844,"mtimeMs":1581229807202.5046,"ctimeMs":1581229807202.5046,"birthtimeMs":1579488729061.483,"atime":"2020-02-09T06:30:07.202Z","mtime":"2020-02-09T06:30:07.203Z","ctime":"2020-02-09T06:30:07.203Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 14:30:07,315 INFO 66111 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581229807303.4216,"mtimeMs":1581229807304.0696,"ctimeMs":1581229807304.0696,"birthtimeMs":1579488729061.483,"atime":"2020-02-09T06:30:07.303Z","mtime":"2020-02-09T06:30:07.304Z","ctime":"2020-02-09T06:30:07.304Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 14:30:07,366 INFO 66111 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581229807303.4216,"mtimeMs":1581229807304.0696,"ctimeMs":1581229807304.0696,"birthtimeMs":1579488729061.483,"atime":"2020-02-09T06:30:07.303Z","mtime":"2020-02-09T06:30:07.304Z","ctime":"2020-02-09T06:30:07.304Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-09 15:18:44,541 ERROR 66111 nodejs.ClusterClientNoResponseError: client no response in 1912047ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 66111
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 16:25:46,021 INFO 69164 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-02-09 16:25:46,954 INFO 69164 [egg:core] dump config after load, 9ms
+2020-02-09 16:25:48,159 INFO 69164 [egg-watcher] Start watching: ["/Users/weichangbin/Desktop/reptiles/server/app","/Users/weichangbin/Desktop/reptiles/server/config","/Users/weichangbin/Desktop/reptiles/server/mocks","/Users/weichangbin/Desktop/reptiles/server/mocks_proxy","/Users/weichangbin/Desktop/reptiles/server/app.js"]
+2020-02-09 16:25:48,159 INFO 69164 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app"
+2020-02-09 16:25:48,159 INFO 69164 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/config"
+2020-02-09 16:25:48,160 INFO 69164 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks"
+2020-02-09 16:25:48,160 INFO 69164 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks_proxy"
+2020-02-09 16:25:48,160 INFO 69164 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app.js"
+2020-02-09 16:25:48,163 INFO 69164 [egg-watcher:agent] watcher start success
+2020-02-09 16:25:48,339 INFO 69164 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-02-09 16:25:48,361 INFO 69164 [egg:core] dump config after ready, 15ms
+2020-02-09 18:34:03,754 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 139290ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 19:00:26,494 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 1354702ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 19:25:02,750 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 976156ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-09 20:54:40,626 ERROR 69164 nodejs.ClusterClientNoResponseError: client no response in 2417369ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/weichangbin/Desktop/reptiles/server/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 69164
+hostname: weichangbins-MacBook-Pro.local
+
+2020-02-10 08:49:01,176 INFO 77137 [egg:logger] init all loggers with options: {"dir":"/Users/weichangbin/Desktop/reptiles/server/logs/reptiles","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"reptiles-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-02-10 08:49:02,074 INFO 77137 [egg:core] dump config after load, 7ms
+2020-02-10 08:49:03,395 INFO 77137 [egg-watcher] Start watching: ["/Users/weichangbin/Desktop/reptiles/server/app","/Users/weichangbin/Desktop/reptiles/server/config","/Users/weichangbin/Desktop/reptiles/server/mocks","/Users/weichangbin/Desktop/reptiles/server/mocks_proxy","/Users/weichangbin/Desktop/reptiles/server/app.js"]
+2020-02-10 08:49:03,395 INFO 77137 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app"
+2020-02-10 08:49:03,395 INFO 77137 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/config"
+2020-02-10 08:49:03,396 INFO 77137 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks"
+2020-02-10 08:49:03,396 INFO 77137 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/mocks_proxy"
+2020-02-10 08:49:03,396 INFO 77137 [egg-watcher] Start watching: "/Users/weichangbin/Desktop/reptiles/server/app.js"
+2020-02-10 08:49:03,399 INFO 77137 [egg-watcher:agent] watcher start success
+2020-02-10 08:49:03,696 INFO 77137 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 08:49:03,897 INFO 77137 [egg:core] dump config after ready, 122ms
+2020-02-10 08:49:10,167 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/weichangbin/Desktop/reptiles/server/app/public","stat":{"dev":16777220,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4312869753,"size":64,"blocks":0,"atimeMs":1581295750152.9172,"mtimeMs":1581295750152.9172,"ctimeMs":1581295750152.9172,"birthtimeMs":1581295750152.9172,"atime":"2020-02-10T00:49:10.153Z","mtime":"2020-02-10T00:49:10.153Z","ctime":"2020-02-10T00:49:10.153Z","birthtime":"2020-02-10T00:49:10.153Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-02-10 09:50:55,850 WARN 77137 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app.js change
+2020-02-10 09:50:56,345 WARN 77137 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js change
+2020-02-10 09:50:55,592 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"path":"/Users/weichangbin/Desktop/reptiles/server/app.js","event":"change","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311220581,"size":31,"blocks":8,"atimeMs":1581295171814.625,"mtimeMs":1579509742442.1113,"ctimeMs":1579509742442.1113,"birthtimeMs":1579492475307.5244,"atime":"2020-02-10T00:39:31.815Z","mtime":"2020-01-20T08:42:22.442Z","ctime":"2020-01-20T08:42:22.442Z","birthtime":"2020-01-20T03:54:35.308Z"}}
+2020-02-10 09:50:55,990 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/middleware/gzip.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311177440,"size":601,"blocks":8,"atimeMs":1581295750190.7834,"mtimeMs":1579489813163.1526,"ctimeMs":1579489813163.1526,"birthtimeMs":1579486703098.9275,"atime":"2020-02-10T00:49:10.191Z","mtime":"2020-01-20T03:10:13.163Z","ctime":"2020-01-20T03:10:13.163Z","birthtime":"2020-01-20T02:18:23.099Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,031 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/schedule/replies.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311859257,"size":386,"blocks":8,"atimeMs":1581295750258.8828,"mtimeMs":1580788588134.573,"ctimeMs":1580788588134.573,"birthtimeMs":1580623511385.185,"atime":"2020-02-10T00:49:10.259Z","mtime":"2020-02-04T03:56:28.135Z","ctime":"2020-02-04T03:56:28.135Z","birthtime":"2020-02-02T06:05:11.385Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,135 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/controller/api/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311267475,"size":974,"blocks":8,"atimeMs":1581295750190.803,"mtimeMs":1581169561127.8003,"ctimeMs":1581169561127.8003,"birthtimeMs":1579512014602.4329,"atime":"2020-02-10T00:49:10.191Z","mtime":"2020-02-08T13:46:01.128Z","ctime":"2020-02-08T13:46:01.128Z","birthtime":"2020-01-20T09:20:14.602Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,346 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/controller/api/website.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311263294,"size":1073,"blocks":8,"atimeMs":1581295750190.7876,"mtimeMs":1580439702923.0347,"ctimeMs":1580439702923.0347,"birthtimeMs":1579511334660.9958,"atime":"2020-02-10T00:49:10.191Z","mtime":"2020-01-31T03:01:42.923Z","ctime":"2020-01-31T03:01:42.923Z","birthtime":"2020-01-20T09:08:54.661Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,347 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/controller/api/category.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311157461,"size":1936,"blocks":8,"atimeMs":1581295750190.7983,"mtimeMs":1580796587885.0244,"ctimeMs":1580796587885.0244,"birthtimeMs":1579484160443.4392,"atime":"2020-02-10T00:49:10.191Z","mtime":"2020-02-04T06:09:47.885Z","ctime":"2020-02-04T06:09:47.885Z","birthtime":"2020-01-20T01:36:00.443Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:57,008 WARN 77137 [agent:development] reload worker because /Users/weichangbin/Desktop/reptiles/server/config/plugin.js change
+2020-02-10 09:50:56,462 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311061909,"size":353,"blocks":8,"atimeMs":1581295750193.9102,"mtimeMs":1579512709187.8047,"ctimeMs":1579512709187.8047,"birthtimeMs":1579425293974.9766,"atime":"2020-02-10T00:49:10.194Z","mtime":"2020-01-20T09:31:49.188Z","ctime":"2020-01-20T09:31:49.188Z","birthtime":"2020-01-19T09:14:53.975Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,513 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/model/website.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311571165,"size":421,"blocks":8,"atimeMs":1581295749986.7898,"mtimeMs":1580554660578.272,"ctimeMs":1580554660578.272,"birthtimeMs":1580296166396.2993,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-01T10:57:40.578Z","ctime":"2020-02-01T10:57:40.578Z","birthtime":"2020-01-29T11:09:26.396Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,514 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/model/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311842058,"size":787,"blocks":8,"atimeMs":1581295749986.622,"mtimeMs":1581169936530.0908,"ctimeMs":1581169936530.0908,"birthtimeMs":1580613235734.9258,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-08T13:52:16.530Z","ctime":"2020-02-08T13:52:16.530Z","birthtime":"2020-02-02T03:13:55.735Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,515 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/model/category.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311787730,"size":643,"blocks":8,"atimeMs":1581295749986.6455,"mtimeMs":1580608036555.2642,"ctimeMs":1580608036555.2642,"birthtimeMs":1580554651341.3298,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-02T01:47:16.555Z","ctime":"2020-02-02T01:47:16.555Z","birthtime":"2020-02-01T10:57:31.341Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,563 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/send.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185637,"size":1543,"blocks":8,"atimeMs":1581295747541.39,"mtimeMs":1580788578364.7166,"ctimeMs":1580788578364.7166,"birthtimeMs":1579488699322.7769,"atime":"2020-02-10T00:49:07.541Z","mtime":"2020-02-04T03:56:18.365Z","ctime":"2020-02-04T03:56:18.365Z","birthtime":"2020-01-20T02:51:39.323Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,677 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/setting.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311271197,"size":1592,"blocks":8,"atimeMs":1581295749986.5298,"mtimeMs":1581217037976.7495,"ctimeMs":1581217037976.7495,"birthtimeMs":1579512631840.4585,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-09T02:57:17.977Z","ctime":"2020-02-09T02:57:17.977Z","birthtime":"2020-01-20T09:30:31.840Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,678 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/request.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311185731,"size":1616,"blocks":8,"atimeMs":1581295747847.5928,"mtimeMs":1581229807304.0696,"ctimeMs":1581229807304.0696,"birthtimeMs":1579488729061.483,"atime":"2020-02-10T00:49:07.848Z","mtime":"2020-02-09T06:30:07.304Z","ctime":"2020-02-09T06:30:07.304Z","birthtime":"2020-01-20T02:52:09.061Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,726 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/website.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311263640,"size":1344,"blocks":8,"atimeMs":1581295749986.6934,"mtimeMs":1581156350433.5557,"ctimeMs":1581156350433.5557,"birthtimeMs":1579511420373.6106,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-08T10:05:50.434Z","ctime":"2020-02-08T10:05:50.434Z","birthtime":"2020-01-20T09:10:20.374Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,726 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/app/service/category.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311182223,"size":2494,"blocks":8,"atimeMs":1581295749986.808,"mtimeMs":1581165710878.0608,"ctimeMs":1581165710878.0608,"birthtimeMs":1579487532953.1445,"atime":"2020-02-10T00:49:09.987Z","mtime":"2020-02-08T12:41:50.878Z","ctime":"2020-02-08T12:41:50.878Z","birthtime":"2020-01-20T02:32:12.953Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,777 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/config.json","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311302965,"size":648,"blocks":8,"atimeMs":1581173150300.8992,"mtimeMs":1580351862832.7969,"ctimeMs":1580351862832.7969,"birthtimeMs":1579656976619.268,"atime":"2020-02-08T14:45:50.301Z","mtime":"2020-01-30T02:37:42.833Z","ctime":"2020-01-30T02:37:42.833Z","birthtime":"2020-01-22T01:36:16.619Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,777 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/config.test.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311119215,"size":0,"blocks":0,"atimeMs":1579426178548.3572,"mtimeMs":1579426178548.3572,"ctimeMs":1579426178548.3572,"birthtimeMs":1579426178548.3572,"atime":"2020-01-19T09:29:38.548Z","mtime":"2020-01-19T09:29:38.548Z","ctime":"2020-01-19T09:29:38.548Z","birthtime":"2020-01-19T09:29:38.548Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,778 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/config.local.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311119173,"size":776,"blocks":8,"atimeMs":1581295746489.02,"mtimeMs":1580396843992.7969,"ctimeMs":1580396843992.7969,"birthtimeMs":1579426170505.854,"atime":"2020-02-10T00:49:06.489Z","mtime":"2020-01-30T15:07:23.993Z","ctime":"2020-01-30T15:07:23.993Z","birthtime":"2020-01-19T09:29:30.506Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,799 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/config.prod.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311119096,"size":0,"blocks":0,"atimeMs":1581295268686.08,"mtimeMs":1579426160650.2942,"ctimeMs":1579426160650.2942,"birthtimeMs":1579426160650.2942,"atime":"2020-02-10T00:41:08.686Z","mtime":"2020-01-19T09:29:20.650Z","ctime":"2020-01-19T09:29:20.650Z","birthtime":"2020-01-19T09:29:20.650Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,800 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/config.default.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311061911,"size":658,"blocks":8,"atimeMs":1581295746488.9963,"mtimeMs":1581295720036.549,"ctimeMs":1581295720036.549,"birthtimeMs":1579425293975.4966,"atime":"2020-02-10T00:49:06.489Z","mtime":"2020-02-10T00:48:40.037Z","ctime":"2020-02-10T00:48:40.037Z","birthtime":"2020-01-19T09:14:53.975Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-02-10 09:50:56,804 INFO 77137 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/weichangbin/Desktop/reptiles/server/config/plugin.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4311061912,"size":340,"blocks":8,"atimeMs":1581295746488.98,"mtimeMs":1581295727431.1191,"ctimeMs":1581295727431.1191,"birthtimeMs":1579425293976.2446,"atime":"2020-02-10T00:49:06.489Z","mtime":"2020-02-10T00:48:47.431Z","ctime":"2020-02-10T00:48:47.431Z","birthtime":"2020-01-19T09:14:53.976Z"},"remove":false,"isDirectory":false,"isFile":true}

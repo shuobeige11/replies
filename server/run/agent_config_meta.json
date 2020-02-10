@@ -1,0 +1,315 @@
+{
+  "keys": "/Users/weichangbin/Desktop/reptiles/server/config/config.default.js",
+  "middleware": "/Users/weichangbin/Desktop/reptiles/server/config/config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/config/config.default.js",
+      "type": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "validate": "/Users/weichangbin/Desktop/reptiles/server/config/config.default.js",
+  "sequelize": {
+    "dialect": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "database": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "host": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "port": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "username": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "password": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "underscored": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js",
+    "timezone": "/Users/weichangbin/Desktop/reptiles/server/config/config.local.js"
+  },
+  "session": {
+    "maxAge": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "name": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "version": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "description": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "private": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "cheerio": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-onerror": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "fs-extra": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "nodemailer": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "nodemailer-smtp-transport": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "puppeteer": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "sequelize-cli": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "stop": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "dev": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "debug": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "test": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "cov": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "lint": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "ci": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "autod": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "url": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "license": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "strict": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "depth": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "env": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "level": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "logging": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "port": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/weichangbin/Desktop/reptiles/server/node_modules/egg/config/config.default.js"
+}
